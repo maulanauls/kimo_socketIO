@@ -54,8 +54,8 @@ io.on("connection", (socket) => {
   });
   socket.on("message", (msg) => {
     console.log(msg);
-    let reportid = msg.reportid;
-    if (clients[reportid]) clients[reportid].emit("message", msg);
+    let userid = msg.userid;
+    if (clients[userid]) clients[userid].emit("message", msg);
   });
   socket.on("disconnect", () => {
     console.log('disconnect');
