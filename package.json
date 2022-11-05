@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node ./bin/www",
     "debug:dev": "NODE_ENV=development nodemon ./bin/www",
-    "debug:prod": "NODE_ENV=production nodemon ./bin/www"
+    "debug:prod": "NODE_ENV=production nodemon ./bin/www",
+    "start:dev": "NODE_ENV=development forever start --minUptime 1000 --spinSleepTime 1000 ./bin/www",
+    "start:prod": "NODE_ENV=production forever start --minUptime 1000 --spinSleepTime 1000 ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
