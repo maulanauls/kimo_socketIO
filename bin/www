@@ -42,20 +42,20 @@ server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
-var clients = {};
 
 io.on("connection", (socket) => {
   console.log("connected");
   console.log(socket.id, "has joined");
   socket.on("signin", (id) => {
     console.log(id);
-    clients[id] = socket;
-    console.log(clients);
+    // clients[id] = socket;
+    // console.log(conversation);
   });
   socket.on("message", (msg) => {
     console.log(msg);
-    let userid = msg.userid;
-    if (clients[userid]) clients[userid].emit("message", msg);
+    // let reportid = msg.reportid;
+    // if (conversation[reportid]) conversation[reportid].emit("message", msg);
+    socket.emit("message", msg);
   });
   socket.on("disconnect", () => {
     console.log('disconnect');
