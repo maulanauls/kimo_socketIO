@@ -1,9 +1,14 @@
 Repo KIMO Module Rusak Dijalan 
 •	Untuk Repo source KIMO API hanya tinggal di update aja dari bitbucket
+
 •	Websocket Server bisa clone dari link github  - https://github.com/maulanauls/kimo_socketIO
+
 •	Installasi websocket server
+
 •	Install NodeJS di server terlebih dahulu cara installasi bisa menggunakan laragon atau self dependencies dari link NodeJS tergantung dari OS yang dipakai.
+
 •	Installasi node selesai arahkan ke directory repo kimo_socketIO example : cd /path/kimo_socketIO 
+
 •	Lalu jalankan perintah npm install setelah selesai jalan kan perintah utk running
 
 ```shell
