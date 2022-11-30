@@ -10,6 +10,11 @@ Repo KIMO Module Rusak Dijalan
     - npm run start:prod -> utk productio 
     - npm run debug:dev -> utk debug di development
 
+    -- pastikan package forever dari npm dan nodemon sudah diinstall di PC 
+      -- klo belum jalan kan perintah ini 
+      npm install forever -g
+      npm install -g nodemon
+
 * pre-release 
    siapkan domain self run utk socketio contoh iis gunakan reverse proxy arahkan ke port 3000 applikasi dari socketio server
 
