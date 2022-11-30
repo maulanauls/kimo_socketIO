@@ -6,14 +6,18 @@ Repo KIMO Module Rusak Dijalan
 •	Installasi node selesai arahkan ke directory repo kimo_socketIO example : cd /path/kimo_socketIO 
 •	Lalu jalankan perintah npm install setelah selesai jalan kan perintah utk running
 
-•	npm run start:dev -> utk mode development 
-    - npm run start:prod -> utk productio 
-    - npm run debug:dev -> utk debug di development
+```shell
+npm run start:dev // utk mode development 
+npm run start:prod // utk production
+npm run debug:dev // utk debug di development
+```
 
     -- pastikan package forever dari npm dan nodemon sudah diinstall di PC 
       -- klo belum jalan kan perintah ini 
-      npm install forever -g
-      npm install -g nodemon
+```shell
+npm install forever -g
+npm install -g nodemon
+```
 
 * pre-release 
    siapkan domain self run utk socketio contoh iis gunakan reverse proxy arahkan ke port 3000 applikasi dari socketio server
@@ -28,10 +32,11 @@ Repo KIMO Module Rusak Dijalan
 arahkan sockeio client URL di initstate --> 
 di pages/operasional/pelaporan/rusak_dijalan/chat_rdj.dart
 
-socket = await io('https://kimosocketio-dev.kamanggala.web.id/', --> ganti url production
-        OptionBuilder()
-            .setTransports(['websocket']) // for Flutter or Dart VM
-            .disableAutoConnect()  // disable auto-connection
-            .build()
-    );
+###dart
+    socket = await io('https://kimosocketio-dev.kamanggala.web.id/', --> ganti url production
+            OptionBuilder()
+                .setTransports(['websocket']) // for Flutter or Dart VM
+                .disableAutoConnect()  // disable auto-connection
+                .build()
+        );
 
