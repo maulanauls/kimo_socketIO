@@ -32,11 +32,12 @@ npm install -g nodemon
 arahkan sockeio client URL di initstate --> 
 di pages/operasional/pelaporan/rusak_dijalan/chat_rdj.dart
 
-###dart
+```dart
     socket = await io('https://kimosocketio-dev.kamanggala.web.id/', --> ganti url production
             OptionBuilder()
                 .setTransports(['websocket']) // for Flutter or Dart VM
                 .disableAutoConnect()  // disable auto-connection
                 .build()
         );
+```
 
