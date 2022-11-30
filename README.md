@@ -17,7 +17,7 @@ Repo KIMO Module Rusak Dijalan
 
 * pre-release 
    siapkan domain self run utk socketio contoh iis gunakan reverse proxy arahkan ke port 3000 applikasi dari socketio server
-
+   -- contoh.domainproduction.com --> arrah kan ke localhost:3000 di iis manager
 * installasi di iis management open utk fitur websocket
   * di setting iis allow websocket 
   * utk webconfig samakan yang sudah ada di vps 
